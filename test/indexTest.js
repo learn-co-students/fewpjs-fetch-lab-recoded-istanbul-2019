@@ -23,7 +23,7 @@ describe( "index.js", () => {
 
     it( "renders book titles into the DOM by passing a JSON object to renderBooks()", async () => {
       chai.spy.on( window, 'renderBooks' );
-      await fetchBooks().then(() => {
+      await fetchBooks().then(function(){
         expect( window.renderBooks ).to.have.been.called();
       })
     } )

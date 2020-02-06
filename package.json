@@ -37,5 +37,10 @@
     "node-fetch": "^2.3.0",
     "sinon": "^7.2.3",
     "sinon-stub-promise": "^4.0.0"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
   }
 }

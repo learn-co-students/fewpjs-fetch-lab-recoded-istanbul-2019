@@ -9,12 +9,9 @@
 });
  */
 function fetchBooks() {
- return fetch('https://www.anapioficeandfire.com/api/books')
- .then(function(res){
-    return res.json();
-  }).then(function(json){
-    renderBooks(json);
-  });
+ return fetch('https://anapioficeandfire.com/api/books')
+ .then(resp => resp.json())
+ .then(json =>  renderBooks(json));
 
   
 }
